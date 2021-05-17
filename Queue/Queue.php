@@ -20,7 +20,7 @@ class Queue
     public function enqueue($value)
     {
         if(count($this->queue) < $this->limit){
-            array_push($this->queue,$value);
+            array_unshift($this->queue,$value);
         }else{
             echo "Queue is full";
         }
