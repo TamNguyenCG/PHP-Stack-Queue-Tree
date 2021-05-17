@@ -42,5 +42,4 @@ class Queue
        echo "Code is: ".$this->front->value['code']."<hr>";
     }
 
-
 }

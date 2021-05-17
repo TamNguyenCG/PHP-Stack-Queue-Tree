@@ -11,12 +11,12 @@ $queue->enqueue("Jones",4);
 $queue->enqueue("Smith",5);
 $queue->enqueue("Fehrenbach",6);
 
-while(!$queue->isEmpty()){
+echo "<h1 style='color: red'>List of Patients</h1>";
+do{
     $queue->peek();
     $queue->dequeue();
-}
+}while(!$queue->isEmpty());
 
 //echo "<pre>";
 //print_r($queue);
 //echo "</pre>";
-
