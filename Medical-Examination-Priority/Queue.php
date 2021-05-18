@@ -24,6 +24,7 @@ class Queue
         } else {
             $oldBack->link = $this->back;
         }
+//        $this->readList();
     }
 
     public function dequeue()
